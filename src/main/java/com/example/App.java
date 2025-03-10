@@ -67,7 +67,7 @@ public class App extends Application {
                 primaryStage.setScene(successScene);
                 Stage menuStage = new Stage();
                 menuStage.setScene(menuScene);
-                menuStage.setTitle("Menu Order");
+                menuStage.setTitle("Menu ");
                 menuStage.setResizable(false);
                 menuStage.show();
             } else if (usernameField.getText().isEmpty() || passwordField.getText().isEmpty()) {
