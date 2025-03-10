@@ -38,7 +38,7 @@ public class App extends Application {
 
     @Override
     public void start(Stage primaryStage) {
-        primaryStage.setTitle("Sign up");
+        primaryStage.setTitle("Sign");
         primaryStage.setResizable(false);
 
         // Sign-In Form
