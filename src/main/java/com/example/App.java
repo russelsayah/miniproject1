@@ -124,6 +124,7 @@ public class App extends Application {
         return worked;
     }
 
+    @SuppressWarnings({ "deprecation", "unchecked" })
     private Scene createMenuScene() {
         GridPane grid = new GridPane();
         grid.setHgap(10);
@@ -258,13 +259,13 @@ public class App extends Application {
 
     // Order class to hold data
     public static class Order {
-        private String name;
-        private String dob;
-        private String food;
-        private String ketchup;
-        private String drinks;
-        private String utensils;
-        private String address;
+        private final String name;
+        private final String dob;
+        private final String food;
+        private final String ketchup;
+        private final String drinks;
+        private final String utensils;
+        private final String address;
 
         public Order(String name, String dob, String food, String ketchup, String drinks, String utensils, String address) {
             this.name = name;
@@ -303,5 +304,10 @@ public class App extends Application {
         public String getAddress() {
             return address;
         }
+    }
+
+    public static void setRoot(String string) {
+        
+        throw new UnsupportedOperationException("Unimplemented method 'setRoot'");
     }
 }
