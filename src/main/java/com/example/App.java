@@ -38,7 +38,7 @@ public class App extends Application {
 
     @Override
     public void start(Stage primaryStage) {
-        primaryStage.setTitle("Sign");
+        primaryStage.setTitle("Sign Up");
         primaryStage.setResizable(false);
 
         // Sign-In Form
@@ -67,7 +67,7 @@ public class App extends Application {
                 primaryStage.setScene(successScene);
                 Stage menuStage = new Stage();
                 menuStage.setScene(menuScene);
-                menuStage.setTitle("Menu ");
+                menuStage.setTitle("Menu Order");
                 menuStage.setResizable(false);
                 menuStage.show();
             } else if (usernameField.getText().isEmpty() || passwordField.getText().isEmpty()) {
